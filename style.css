@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #f5f5f5;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #a9b0c3;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #35416b;
+    background:
+        radial-gradient(ellipse at top right, #173b6640 0%, transparent 45%),
+        radial-gradient(ellipse at bottom left, #35146c35 0%, transparent 45%),
+        #11182b;
+}
+
+form > div {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #39445f;
+    border-radius: 8px;
+    background: #0b1020;
+    color: #f5f5f5;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #7548ff;
+    border-color: #7548ff;
+}
+
+form > div:has(input[type="checkbox"]) label {
+    display: inline;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    accent-color: #7548ff;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #7548ff, #4169ff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #6036df, #3454df);
+}
+
+#confirmacion {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 35px 25px;
+    border: 1px solid #35416b;
+    border-radius: 16px;
+    background:
+        radial-gradient(ellipse at top right, #173b66 0%, transparent 45%),
+        radial-gradient(ellipse at bottom left, #35146c 0%, transparent 45%),
+        #0b1020;
+}
+
+.check {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7548ff, #4169ff);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 0 25px #7548ff55;
+}
+
+#confirmacion h2 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+#confirmacion > p {
+    color: #b8c5df;
+    line-height: 1.7;
+}
+
+.resumen {
+    margin: 25px 0;
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #293b65;
+    border-radius: 12px;
+    background: #111b35aa;
+}
+
+.resumen p {
+    padding: 10px 0;
+    border-bottom: 1px solid #29334d;
+    overflow-wrap: anywhere;
+}
+
+.resumen p:last-child {
+    border-bottom: none;
+}
+
+#volver {
+    background: transparent;
+    color: white;
+    border: 2px solid transparent;
+    background-image:
+        linear-gradient(#0b1020, #0b1020),
+        linear-gradient(90deg, #00d9c0, #7548ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+#volver:hover {
+    background-image:
+        linear-gradient(#17213b, #17213b),
+        linear-gradient(90deg, #00d9c0, #7548ff);
+}
+
+
+@media (max-width: 500px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    main {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
